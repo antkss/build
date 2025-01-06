@@ -31,10 +31,10 @@ jobs:
       - name: Run a multi-line script
         run: |
           bash a.sh
-          echo "info path: "
+          echo "info current path: "
           pwd
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: artifact
-          path: a.sh
+          path: /output.zip
