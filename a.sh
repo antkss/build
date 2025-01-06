@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-pacman -Syuu git 7zip --noconfirm
+pacman -Syuu git 7zip base-devel --noconfirm
 git clone https://github.com/antkss/gdb-fzf
 cd gdb-fzf
 ./makepkg
