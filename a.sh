@@ -8,7 +8,7 @@ pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst
 pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' --noconfirm
 cp ./pacman.conf /etc
 
-pacman -Syuu git wget 7zip base-devel source-highlight --noconfirm
+pacman -Syuu git wget 7zip base-devel source-highlight pod2man --noconfirm
 
 git clone https://github.com/antkss/gdb-fzf
 cd gdb-fzf
