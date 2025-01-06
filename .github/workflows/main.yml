@@ -33,6 +33,8 @@ jobs:
           bash a.sh
           echo "info current path: "
           pwd
+          echo "cpu info: "
+          lscpu
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
