@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-pacman -Syuu git 7zip base-devel source-highlight --noconfirm
+pacman -Syuu git 7zip base-devel source-highlight pod2man --noconfirm
 git clone https://github.com/antkss/gdb-fzf
 cd gdb-fzf
 ./makepkg
