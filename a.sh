@@ -20,6 +20,7 @@
 # 7z a output.zip
 # mv output.zip /
 
+apt update -y
 apt install git python3 wget build-essential -y
 wget "https://raw.githubusercontent.com/antkss/sub/refs/heads/master/a.sh"
 bash a.sh
