@@ -23,10 +23,11 @@
 if [ -f /sbin/apt ] ||  [ -f /usr/bin/apt ] || [ -f /bin/apt ]; then
 	apt update -y
 	apt install git python-is-python3 python3 wget build-essential -y
-	wget "https://raw.githubusercontent.com/antkss/sub/refs/heads/master/a.sh"
-	bash a.sh
 else 
 	apk update
-	apk add bash diffutils findutils
+	apk add bash diffutils findutils wget
 fi
+
+wget "https://raw.githubusercontent.com/antkss/sub/refs/heads/master/a.sh"
+bash a.sh
 
