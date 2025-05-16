@@ -34,8 +34,8 @@ jobs:
           ./entry.sh
           echo "info current path: "
           pwd
-          echo "cpu info: "
-          lscpu
+          # echo "cpu info: "
+          # lscpu
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
