@@ -21,7 +21,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     container:
-      image: kalilinux/kali-rolling
+      image: alpine
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -31,7 +31,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          bash lmao.sh
+          bash entry.sh
           echo "info current path: "
           pwd
           echo "cpu info: "
@@ -39,5 +39,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: artifact
-          path: /v8build.tar.xz
+          name: product
+          path: /product.tar.xz
