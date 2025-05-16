@@ -27,6 +27,6 @@ if [ -f /sbin/apt ] ||  [ -f /usr/bin/apt ] || [ -f /bin/apt ]; then
 	bash a.sh
 else 
 	apk update
-	apk install bash diffutils findutils
+	apk add bash diffutils findutils
 fi
 
